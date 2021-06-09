@@ -4,10 +4,12 @@ from django.views.decorators.csrf import csrf_exempt
 from ussd.redis_tracker.redis_db import get_user_level
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Users
+from .models import Users, Register_user, reg_user
 
+
+trying = Register_user
 response = ''
-print('welcome')
+# print(Register_user)
 
 
 @csrf_exempt

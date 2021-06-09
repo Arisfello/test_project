@@ -55,4 +55,14 @@ class UssdLog(models.Model):
         verbose_name_plural = "Users Logs"
 
 
+class Register_user:
+    def __init__(self, get_name, get_email, get_gender):
+        self.email = get_email
+        self.name = get_name
+        self.gender = get_gender
 
+    def display_user(self):
+        print(self.name, self.gender, self.email)
+
+
+reg_user = Register_user('input()', 'input()', 'input()')
